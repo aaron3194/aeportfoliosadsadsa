@@ -1,0 +1,103 @@
+/* Center website */
+.main {
+  margin: auto;
+}
+.row1 {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row1,
+.row1 > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn-p {
+  border: none;
+  outline: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 1px solid #cccccc;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn-p:hover {
+  background-color: #3282b8 !important;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border: 0 !important ;
+}
+
+/* Add a dark background color to the active button */
+.btn-p.active {
+  background-color: #3282b8 !important;
+  color: white;
+  border: 0 !important ;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+button:focus {
+  outline: none !important;
+  background-color: #3282b8 !important;
+  color: white;
+  border: 0 !important ;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+#myBtnContainer {
+  text-align: center;
+}
+.row-p {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For desktop: */
+  .btn-p {
+    border: none;
+    outline: none;
+    display: inline !important;
+    margin-bottom: 15px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+
+    color: #fff !important;
+    border: 1px solid #cccccc;
+    border-radius: 100px;
+  }
+  .small {
+    margin-bottom: 15px !important;
+  }
+}
